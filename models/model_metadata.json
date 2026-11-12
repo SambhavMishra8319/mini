@@ -1,0 +1,95 @@
+{
+  "model_name": "Logistic Regression",
+  "best_params": {
+    "C": 3
+  },
+  "training_date": "2026-11-10T14:58:01",
+  "classes": [
+    "anxiety",
+    "bipolar",
+    "depression",
+    "normal",
+    "personality disorder",
+    "stress",
+    "suicidal"
+  ],
+  "is_demo_dataset": true,
+  "dataset_rows": 51009,
+  "class_distribution": {
+    "normal": 16039,
+    "depression": 15087,
+    "suicidal": 10641,
+    "anxiety": 3617,
+    "bipolar": 2501,
+    "stress": 2293,
+    "personality disorder": 895
+  },
+  "text_column": "statement",
+  "target_column": "status",
+  "tfidf_vocab_size": 100000,
+  "selection_metric": "validation macro F1",
+  "best_model_metrics": {
+    "accuracy": 0.7686728092530877,
+    "precision_macro": 0.7192643430083198,
+    "recall_macro": 0.7256968182697018,
+    "f1_macro": 0.7204768620959738,
+    "f1_weighted": 0.7683477596672739,
+    "classes": [
+      "anxiety",
+      "bipolar",
+      "depression",
+      "normal",
+      "personality disorder",
+      "stress",
+      "suicidal"
+    ],
+    "per_class": {
+      "anxiety": {
+        "precision": 0.7894039735099337,
+        "recall": 0.8243430152143845,
+        "f1": 0.8064952638700947
+      },
+      "bipolar": {
+        "precision": 0.7840670859538784,
+        "recall": 0.748,
+        "f1": 0.7656090071647902
+      },
+      "depression": {
+        "precision": 0.7598634294385432,
+        "recall": 0.6639045409347033,
+        "f1": 0.7086502741906952
+      },
+      "normal": {
+        "precision": 0.896249243799153,
+        "recall": 0.9270963704630788,
+        "f1": 0.9114118732697631
+      },
+      "personality disorder": {
+        "precision": 0.63125,
+        "recall": 0.5642458100558659,
+        "f1": 0.5958702064896755
+      },
+      "stress": {
+        "precision": 0.5166374781085814,
+        "recall": 0.6427015250544662,
+        "f1": 0.5728155339805825
+      },
+      "suicidal": {
+        "precision": 0.6573791902481497,
+        "recall": 0.7095864661654135,
+        "f1": 0.6824858757062147
+      }
+    },
+    "roc_auc": null,
+    "supports_probability": true,
+    "best_params": {
+      "C": 3
+    },
+    "val_f1_macro": 0.7272664940088449
+  },
+  "all_models_compared": [
+    "Logistic Regression",
+    "Multinomial Naive Bayes",
+    "Linear SVM"
+  ]
+}
